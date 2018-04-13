@@ -1,4 +1,4 @@
-read -p "Install Homebrew? y/n" hb
+read -p "Install Homebrew? y/n\n" hb
 case $hb in
   "y")
     /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
@@ -9,7 +9,7 @@ case $hb in
     ;;
 esac
 
-read -p "Install NodeJS? y/n" n
+read -p "Install NodeJS? y/n\n" n
 case $n in
   "y")
     brew install nodejs
@@ -20,7 +20,7 @@ case $n in
     ;;
 esac
 
-read -p "Download Oceanic Theme for OSX Terminal from https://github.com/robinbentley/oceanic-next-macos-terminal ? y/n" ocean
+read -p "Download Oceanic Theme for OSX Terminal\nFrom https://github.com/robinbentley/oceanic-next-macos-terminal ? y/n\n" ocean
 case $ocean in
   "y")
     cd ~/Download/
@@ -33,7 +33,7 @@ case $ocean in
     ;;
 esac
 
-read -p "Generate ssh keys? y/n" sshkey
+read -p "Generate ssh keys? y/n\n" sshkey
 case $sshkey in
   "y")
     ssh-keygen -t rsa 
